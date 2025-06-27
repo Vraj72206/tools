@@ -28,10 +28,11 @@ config.keys = {
   { key = "7", mods = "CTRL|ALT", action = act.ActivateTab(6) },
   { key = "8", mods = "CTRL|ALT", action = act.ActivateTab(7) },
   { key = "9", mods = "CTRL|ALT", action = act.ActivateTab(8) },
-  { key = "]", mods = "CTRL|ALT", action = act.ActivateTabRelative(1) },
-  { key = "[", mods = "CTRL|ALT", action = act.ActivateTabRelative(-1) },
+  { key = "]", mods = "CTRL|SHIFT", action = act.ActivateTabRelative(1) },
+  { key = "[", mods = "CTRL|SHIFT", action = act.ActivateTabRelative(-1) },
   { key = "c", mods = "CTRL|SHIFT", action = act.CopyTo "Clipboard" },
   { key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom "Clipboard" },
+  { key = "Z", mods = "CTRL|SHIFT", action = act.SpawnTab("CurrentPaneDomain") },
 }
 
 -- Launch menu entries
