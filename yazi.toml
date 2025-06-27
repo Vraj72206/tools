@@ -1,0 +1,16 @@
+# ~/.config/yazi/yazi.toml (or %APPDATA%\yazi\yazi.toml)
+
+[opener]
+# Define a "helix" opener that runs the 'hx.exe' command (Helix)
+helix = [
+    { run = 'hx.exe %*', block = true, for = "windows" }, # Use %* for Windows arguments
+]
+
+[open]
+# Rules for opening files.
+rules = [
+    # Open all text files with 'helix'
+    { mime = "text/*", use = "helix" },
+    # Default rule: open everything else with 'helix'
+    { name = "*", use = "helix" },
+]
